@@ -56,12 +56,11 @@ function DrawTable(){
   x.style.display = "none";
   var table = document.getElementById("tableDisp");
   x.style.display = "block"
-  var row = table.insertRow(0);
+  var row = table.insertRow(-1);
   var cell1 = row.insertCell(0);
-  var cell2 = row.insertCell(1);
   cell1.innerHTML = "Sriram";
   var binaryOutput = getBinary();
-  cell2.innerHTML = binaryOutput;
+  // cell2.innerHTML = binaryOutput;
 
 }
 console.log(arr)
