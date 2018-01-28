@@ -1,4 +1,3 @@
-
 const url = 'https://api.giphy.com/v1/gifs/trending?';
 const apiKey = 'api_key=tvATh5CFvKA1cSqBhf3l9c1nBIDYdsV9&fmt=json';
 const container = document.getElementById('container');
@@ -53,14 +52,28 @@ $(document).ready(function(){
 });
 function DrawTable(){
   var x = document.getElementById("container");
-  x.style.display = "none";
+  x.style.visibility = "hidden  ";
   var table = document.getElementById("tableDisp");
-  x.style.display = "show"
+  x.style.display = "block";
+  var headerx = table.insertRow(-1);
+  var cellhead = headerx.insertCell(0)
+  cellhead.innerHTML="NAME";
   var row = table.insertRow(-1);
   var cell1 = row.insertCell(0);
-  cell1.innerHTML = "Sriram";
-  var binaryOutput = getBinary();
-  // cell2.innerHTML = binaryOutput;
+  cell1.innerHTML = "David";
+  var row2 = table.insertRow(-1);
+  var cell2 = row2.insertCell(0);
+  cell2.innerHTML = "Samanatha";
+  var row3 = table.insertRow(-1);
+  var cell3 = row3.insertCell(0);
+  cell3.innerHTML = "Carly";
+  var row4 = table.insertRow(-1);
+  var cell4 = row4.insertCell(0);
+  cell4.innerHTML = "Mike";
+  var row5 = table.insertRow(-1);
+  var cell5 = row5.insertCell(0);
+  cell5.innerHTML = "Hannah";
+
 
 }
 console.log(arr)
